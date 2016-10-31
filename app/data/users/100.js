@@ -1,4 +1,4 @@
-windows.users_100 = 
+window.users_100 = 
 {
   "results": [
     {

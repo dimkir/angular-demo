@@ -5,7 +5,8 @@ angular.module('app')
     
      $scope.name = 'Dimitry'; 
      
-     $scope.users = users.results;
+    //  $scope.users = users.results;
+     $scope.users = users_100.results;
      
   }]);
 
