@@ -12,6 +12,13 @@ body{
   height: 50px;
 }
 
+
+.my-square{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
 ul.users {
   
   list-style: none;
