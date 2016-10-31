@@ -12,6 +12,7 @@
   "author": "Joe Eames & Jim Cooper",
   "license": "ISC",
   "dependencies": {
+    "angular": "^1.5.8",
     "angular-ui-bootstrap": "^2.2.0",
     "body-parser": "1.13.1",
     "bootstrap": "^3.3.7",
