@@ -12,6 +12,7 @@
   "author": "Joe Eames & Jim Cooper",
   "license": "ISC",
   "dependencies": {
+    "angular-ui-bootstrap": "^2.2.0",
     "body-parser": "1.13.1",
     "express": "4.13.0",
     "sprintf-js": "^1.0.3"
