@@ -1,9 +1,16 @@
 /* Styles go here */
 
+
+
 body{
   font-family: 'Slabo 27px', serif;  
 }
 
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; } 
+
+.navbar-spacer{
+  height: 50px;
+}
 
 ul.users {
   
