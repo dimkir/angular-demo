@@ -24,6 +24,9 @@ angular.module('app')
     };
     
 
+    $scope.sampleData = 'SampleData!!!';
+    $scope.count = 8;
+
      $scope.onKeyUp = function(ev){
        console.log('On key up ' + $scope.name );
        console.log(ev);

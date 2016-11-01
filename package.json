@@ -17,6 +17,7 @@
     "body-parser": "1.13.1",
     "bootstrap": "^3.3.7",
     "express": "4.13.0",
+    "jquery": "^2.2.4",
     "lodash": "^4.16.5",
     "sprintf-js": "^1.0.3"
   }
