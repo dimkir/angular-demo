@@ -28,3 +28,15 @@ gulp.task('jshint', function() {
     .pipe(jshint())
     .pipe(jshint.reporter('jshint-stylish'));
 });    
+
+
+/* concat javascript files, minify if --type production */
+gulp.task('build-js', function() {
+  return gulp.src(input.javascript)
+    .pipe(sourcemaps.init())
+      .pipe(concat('app.js'))
+      //only uglify if gulp is ran with '--type production'
+      .pipe(gutil.env.type === 'production' ? uglify() : gutil.noop())
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest(output.javascript));
+});
