@@ -57,11 +57,11 @@ angular.module('app')
           });
 
           return !atLeastOneLong;
-       }
+       };
 
 
 
-       if ( tokens.length == 0 || tokensShorterThan(tokens, 2)){
+       if ( tokens.length === 0 || tokensShorterThan(tokens, 2) ){
          $scope.users = ALL_USERS;
          return;
        }
