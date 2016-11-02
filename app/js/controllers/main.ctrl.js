@@ -9,7 +9,7 @@ angular.module('app')
     
      var vm = this;
      var ALL_USERS = users_100.results;
-     $scope.name = 'Dimitry'; 
+     $scope.name = 'ca'; 
      $scope.users = [];
 
 

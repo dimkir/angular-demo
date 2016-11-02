@@ -1,10 +1,15 @@
-<div class="my-user-profile">
-	<a href="{{ user.picture.large }}" target="_blank">
-		<div class="overlay">
+<div my-closeable class="float-left">
+	<div class="my-user-profile" 
+		 style="background-image: url({{user.picture.large}});">
 
-			{{ user.name.first|capitalize }}
 
-		</div>
-	</a>
+		<a href="{{ user.picture.large }}" target="_blank">
+			<div class="overlay">
 
+				{{ user.name.first|capitalize }}
+
+			</div>
+		</a>
+
+	</div>
 </div>

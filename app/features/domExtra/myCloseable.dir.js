@@ -31,7 +31,7 @@
             scope.onClose = function() {
                 // element.css('display', 'none');
                 // element.fadeOut();
-                element.slideUp(3000);
+                element.slideUp(1000);
                 // debugger;
                 // element.clear(); // this would clear
             };

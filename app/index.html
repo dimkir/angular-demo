@@ -93,10 +93,9 @@
         </div>
         </a>
       </li>
-      <li ng-repeat="user in users" style="background-image: url({{ user.picture.large }});">
-          <my-user-profile/>        
-
-        </li>
+      <li ng-repeat="user in users">
+          <my-user-profile user="user"/>        
+       </li>
     </ul>
     
 

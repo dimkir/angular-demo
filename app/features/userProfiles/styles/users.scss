@@ -20,29 +20,6 @@ ul.users {
 } 
 
 
-ul.users > * {
-
-  margin-right: 5px;
-  margin-left:  5px;
-  margin-bottom: 5px;
-  margin-top: 5px;
-  
-}
-ul.users > li {
-  
-  position: relative;
-  float: left;
-  width:  150px;
-  height: 150px;
-  padding: 0;
-  text-align: center;
-/*   border: 1px solid red; */
-  
-  
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
-}
 
 ul.users > li.add-user > a {
   display: table;
@@ -59,33 +36,8 @@ ul.users > li.add-user > a > div {
 }
 
 
-
 ul.users .profile-image{
   width: 100%;
-}
-
-ul.users .overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  background-color: rgba(0,0,0,0.4);
-  
-  width: 100%;
-  color: white;
-  
-  
-  transition: background-color .5s ease-out;
-}
-
-ul.users .overlay:hover{
-  background-color: red;
-}
-
-
-ul.users .overlay a {
-  color: white;
 }
 
 ul.users > li > * {

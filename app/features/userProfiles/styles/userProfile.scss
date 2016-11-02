@@ -9,4 +9,50 @@
     background-color: green;
     color: white;
     font-size: small;
+
+
+    margin-right: 5px;
+    margin-left:  5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+
+
+    position: relative;
+    float: left;
+    width:  150px;
+    height: 150px;
+    padding: 0;
+    text-align: center;
+    /*   border: 1px solid red; */
+    
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top; 
+
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        background-color: rgba(0,0,0,0.4);
+        
+        width: 100%;
+        color: white;
+        
+        transition: background-color .5s ease-out;
+
+        a {
+            color: white;
+        }        
+    }
+
+    .overlay:hover{
+        background-color: red;
+    }
+    
+       
 }

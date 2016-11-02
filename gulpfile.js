@@ -10,7 +10,9 @@ var gulp  = require('gulp'),
 
 
     input  = {
-      'html': 'app/**/*.html',  // this will also copy templates
+      'html'     : 'app/**/*.html',  // this will also copy templates
+      'bs_fonts' : 'node_modules/bootstrap/dist/fonts/*', 
+
       'sass': 'app/**/*.scss',
       'lib_css' : 'app/lib-css/**/*.css',
 
@@ -27,6 +29,8 @@ var gulp  = require('gulp'),
 
       'lib_css'           : 'dist/css/lib',
       'stylesheets'       : 'dist/css',
+      'bs_fonts'          : 'dist/css/fonts',
+
       'stylesheets_concat': 'styles-all.css', // will be in stylesheets dir
 
       'javascript'        : 'dist/js',
@@ -87,7 +91,11 @@ gulp.task('copy-html', function() {
 gulp.task('copy-lib-css', function(){
   return gulp.src(input.lib_css)
     .pipe(gulp.dest(output.lib_css));
+});
 
+gulp.task('copy-bs-fonts', function(){
+  return gulp.src(input.bs_fonts)
+    .pipe(gulp.dest(output.bs_fonts));
 });
 
 
@@ -109,4 +117,8 @@ gulp.task('watch', function() {
 
 
 /* run the watch task when gulp is called without arguments */
-gulp.task('default', ['jshint', 'build-js', 'build-css', 'copy-html', 'copy-lib-css', 'copy-lib-javascript', 'watch']);
+gulp.task('default', [
+                    'jshint', 'build-js', 'build-css', 
+                    'copy-html', 'copy-lib-css', 'copy-lib-javascript', 'copy-bs-fonts', 
+                    'watch'
+                ]);
