@@ -40,6 +40,10 @@ angular.module('app')
      };
 
 
+     $scope.onAddUser = function(){
+       console.log('On add user...');
+     };
+
 
      vm.filterUsersByName = function(){
 

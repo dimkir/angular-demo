@@ -19,23 +19,6 @@ ul.users {
   
 } 
 
-
-
-ul.users > li.add-user > a {
-  display: table;
-  background-color: rgba(0,0,0,0.3);
-  
-}
-
-ul.users > li.add-user > a > div {
-  display: table-cell;
-  color: white;
-  /* background-color: green; */
-  vertical-align: middle;
-  
-}
-
-
 ul.users .profile-image{
   width: 100%;
 }

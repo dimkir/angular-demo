@@ -5,6 +5,8 @@
  *
  */
 
+ @import 'user-variables';
+
 .my-user-profile{
     background-color: green;
     color: white;
@@ -20,8 +22,8 @@
 
     position: relative;
     float: left;
-    width:  150px;
-    height: 150px;
+    width:  $size;
+    height: $size;
     padding: 0;
     text-align: center;
     /*   border: 1px solid red; */

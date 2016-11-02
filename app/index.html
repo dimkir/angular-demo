@@ -33,12 +33,8 @@
 
 
 	<ul class="users">
-		<li class="add-user">
-			<a href="new-user.html">
-				<div>
-					Add new user
-				</div>
-			</a>
+		<li>
+			<add-user on-add="onAddUser()"></add-user>
 		</li>
 		<li ng-repeat="user in users">
 			<my-user-profile user="user" />
