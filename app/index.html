@@ -71,10 +71,11 @@
 
 <div class="navbar-spacer"></div>
 
-    <h1 my-closeable>Hello {{ name }}!</h1>
+    <div my-closeable>
+        <h1>Hello {{ name }}!</h1>
+    </div>
 
-
-    <div my-circle></div>
+    <my-circle my-closeable></my-circle>
     
     <input type="text" ng-model="name" ng-keyup="onKeyUp()">
 

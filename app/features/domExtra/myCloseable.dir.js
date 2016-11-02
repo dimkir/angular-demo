@@ -17,6 +17,8 @@
             // controllerAs: 'vm',
             link: link,
             restrict: 'A',
+            transclude: true,
+            templateUrl: 'features/domExtra/closeable.html',
             scope: {
             }
         };
@@ -26,10 +28,22 @@
 
             // what can we do here?
 
+            scope.onClose = function() {
+                // element.css('display', 'none');
+                // element.fadeOut();
+                element.slideUp(3000);
+                // debugger;
+                // element.clear(); // this would clear
+            };
+
             // how to add extra items to the element?
-            angular.element(element).wrap("<div class='my-thick-border'></div>");
+            // angular.element(element).wrap("<div class='my-thick-border'></div>");
         }
+
+
     }
+
+    
     /* @ngInject */
     function ControllerController () {
         

@@ -3,7 +3,35 @@
  * dom-extra.scss
  *
  */
-.my-thick-border{
+@mixin thick-border(){
   border: 4px solid springgreen;
+
+  margin-top: 50px; // just to add some space
+  margin-bottom: 50px; // just to add some space
+  overflow-y: hidden;  // so that it wraps border around floats.
   
+}
+
+
+.closeable{
+
+  @include thick-border;
+
+   position: relative;
+
+   .controls{
+     position: absolute;
+     width: 100%;
+     min-height: 10px;
+     top: 0;
+     left: 0;
+     font-size: 8px;
+     text-align: right;
+
+     button{
+       margin-top: 5px;
+       margin-right: 5px;
+     }
+
+   }
 }
