@@ -6,17 +6,43 @@
  */
 
 
-.my-square{
-  float: left;
-  width: 100px;
-  height: 100px;
-  background-color: red;
-}
+.geom {
+
+      $size: 100px;
+      &.col-red{
+        background-color: red;
+      }
+      
+      &.col-orange{
+        background-color: orange;
+      }
+
+      &.col-green{
+        background-color: green;
+      }
 
 
-.my-circle{
-  width: 100px;
-  height: 100px;
-  background-color: orange;
-  border-radius: 50%;
+      &.square{
+        float: left;
+        width:  $size;
+        height: $size;
+
+        transition: background-color .3s linear;
+      }
+
+
+      &.circle{
+        float: left;
+        width: $size;
+        height: $size;
+        border-radius: 50%;
+        transition: background-color .3s linear;
+        
+      }
+
+
+      &.pointer{
+        cursor: pointer;
+      }
+
 }

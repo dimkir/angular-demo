@@ -8,7 +8,7 @@
       return {
         restrict: 'EA',
         replace: true,
-        template: '<div class="my-square">{{ name }}</div>',
+        template: '<div class="geom col-orange square">{{ name }}</div>',
         // template: "<input type='text' ng-model='sampleData' />{{ sampleData}} <br/>",
         link: function(scope, element, attrs, controller){
           // var markup = ;
