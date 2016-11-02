@@ -2,10 +2,10 @@
 
 'use strict';
 
-var utils = global.utils;
+
 
 angular.module('app')
-  .controller('mainCtrl', ['$scope',function($scope){
+  .controller('mainCtrl', ['$scope' , 'utils' ,function($scope, utils){
     
      var vm = this;
      var ALL_USERS = users_100.results;

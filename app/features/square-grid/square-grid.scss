@@ -1,0 +1,21 @@
+/**
+ *
+ * square-grid.scss
+ *
+ */
+
+.my-square-grid{
+  overflow-y: hidden;
+  min-height: 200px;
+
+  min-width: 100px;
+  color: white;
+  background-color: purple;
+
+}
+
+.my-square-grid > * {
+  margin: 15px;
+  padding: 5px;
+  border: 1px solid deeppink;
+}

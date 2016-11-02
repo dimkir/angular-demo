@@ -1,9 +1,10 @@
-<a href="{{ user.picture.large }}" target="_blank">
-<div class="overlay">
-    
+<div class="my-user-profile">
+	<a href="{{ user.picture.large }}" target="_blank">
+		<div class="overlay">
 
+			{{ user.name.first|capitalize }}
 
-    {{ user.name.first|capitalize }} 
-    
+		</div>
+	</a>
+
 </div>
-    </a>
