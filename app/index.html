@@ -1,159 +1,145 @@
 <!DOCTYPE html>
 <html ng-app="app">
 
-  <head>
-    <!--<link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />-->
-    <link rel="stylesheet" href="css/lib/ui-bootstrap-csp.css">
-    <link rel="stylesheet" href="css/lib/bootstrap-3.3.7.min.css">
-    <!--<link data-require="bootstrap@3.3.6" data-semver="3.3.6" rel="stylesheet" href="bootstrap" />-->
-    <!--<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">-->
-    <link rel="stylesheet" href="css/styles-all.css" />
+<head>
+	<!--<link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />-->
+	<link rel="stylesheet" href="css/lib/ui-bootstrap-csp.css">
+	<link rel="stylesheet" href="css/lib/bootstrap-3.3.7.min.css">
+	<!--<link data-require="bootstrap@3.3.6" data-semver="3.3.6" rel="stylesheet" href="bootstrap" />-->
+	<!--<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">-->
+	<link rel="stylesheet" href="css/styles-all.css" />
 
-    <title>Hello =={{ name }}==</title>
-  </head>
+	<title>Hello =={{ name }}==</title>
+</head>
 
-  <body ng-controller="mainCtrl as $ctrl">
+<body ng-controller="mainCtrl as $ctrl">
 
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+					aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
+				<a class="navbar-brand" href="#">Brand</a>
+			</div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+					<li><a href="#">Link</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul>
+					</li>
+				</ul>
+				<form class="navbar-form navbar-left">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Link</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
 
-<div class="navbar-spacer"></div>
+	<div class="navbar-spacer"></div>
 
-    <div my-closeable>
-        <h1>Hello {{ name }}!</h1>
-    </div>
+	<div my-closeable>
+		<h1>Hello {{ name }}!</h1>
+	</div>
 
-    <my-circle my-closeable></my-circle>
-    
-    <input type="text" ng-model="name" ng-keyup="onKeyUp()">
+	<my-circle my-closeable></my-circle>
+
+	<input type="text" ng-model="name" ng-keyup="onKeyUp()">
 
 
-    <button ng-click="openModal()">Open modal</button>
+	<button ng-click="openModal()">Open modal</button>
 
-    <my-sample></my-sample>
-    
-    
-    <ul class="users">
-      <li class="add-user">
-        <a href="new-user.html">
-        <div>
-          Add new user
-        </div>
-        </a>
-      </li>
-      <li ng-repeat="user in users">
-          <my-user-profile user="user"/>        
-       </li>
-    </ul>
-    
+	<my-sample></my-sample>
 
-    <hr/>
 
-    <h2>1st Square</h2>
+	<ul class="users">
+		<li class="add-user">
+			<a href="new-user.html">
+				<div>
+					Add new user
+				</div>
+			</a>
+		</li>
+		<li ng-repeat="user in users">
+			<my-user-profile user="user" />
+		</li>
+	</ul>
 
-    <my-square geom-color-toggle></my-square>
 
-    <h3>2nd square</h3>
-    <my-square geom-color-toggle></my-square>
+	<hr/>
 
-    <div class="clearfix"></div>
-    
-    <!--<hr/>
+	<h2>1st Square</h2>
+
+	<my-square geom-color-toggle></my-square>
+
+	<h3>2nd square</h3>
+	<my-square geom-color-toggle></my-square>
+
+	<div class="clearfix"></div>
+
+	<!--<hr/>
     <div my-sample></div>
     <hr/>-->
-    
-    <!--<my-sample></my-sample>-->
-    
 
-    <div class="wrapper-my-square-grid">
-      <my-square-grid count="count" name="sampleData">something inside grid</my-square-grid>
-    </div>
-    
-    <!--<script data-require="jquery@2.2.4" data-semver="2.2.4" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>-->
-
-    <script src="js/lib/jquery-2.2.4.min.js"></script>
-    <!--<script data-require="bootstrap@3.3.6" data-semver="3.3.6" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
-    <!--<script data-require="angular.js@1.5.8" data-semver="1.5.8" src="https://code.angularjs.org/1.5.8/angular.js"></script>-->
-    
-
-    <script src="js/lib/shared.js"></script>
-    <script src="js/lib/sprintf.min.js"></script>
-
-    <!--<script src="lib/angular-1.4.0/angular.js"></script>-->
-    <script src="js/lib/angular-1.5.8/angular.js"></script>
-    <script src="js/lib/ui-bootstrap-tpls.js"></script>
+	<!--<my-sample></my-sample>-->
 
 
+	<div class="wrapper-my-square-grid">
+		<my-square-grid count="count" name="sampleData">something inside grid</my-square-grid>
+	</div>
 
-    <script src="js/app.js"></script>
+	<!--<script data-require="jquery@2.2.4" data-semver="2.2.4" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>-->
 
-    <!--<script src="js/utils/utils.js"></script>
+	<script src="js/lib/jquery-2.2.4.min.js"></script>
+	<!--<script data-require="bootstrap@3.3.6" data-semver="3.3.6" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+	<!--<script data-require="angular.js@1.5.8" data-semver="1.5.8" src="https://code.angularjs.org/1.5.8/angular.js"></script>-->
 
-    <script src="data/users/small.js"></script>
-    <script src="data/users/100.js"></script>
-    
-    <script src="js/controllers/main.ctrl.js"></script>
-    <script src="js/filters/capitalize.fltr.js"></script>
-    <script src="js/directives/mySample.dir.js"></script>
-    <script src="js/directives/mySquare.dir.js"></script>
-    <script src="js/directives/mySquareGrid.dir.js"></script>
-    <script src="js/directives/myCircle.dir.js"></script>
-    <script src="features/userProfiles/myUserProfile.dir.js"></script>
-    <script src="features/domExtra/myCloseable.dir.js"></script>-->
 
-    
-  </body> 
+	<script src="js/lib/shared.js"></script>
+	<script src="js/lib/sprintf.min.js"></script>
+
+	<!--<script src="lib/angular-1.4.0/angular.js"></script>-->
+	<script src="js/lib/angular-1.5.8/angular.js"></script>
+	<script src="js/lib/ui-bootstrap-tpls.js"></script>
+
+	<script src="js/app.js"></script>
+
+</body>
 
 </html>
