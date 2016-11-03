@@ -4,7 +4,7 @@
 <div class="modal-body" id="modal-body">
     <ul>
         <li ng-repeat="item in $ctrl.items">
-            <a href="#" ng-click="$event.preventDefault(); $ctrl.selected.item = item">{{ item }}</a>
+            <a ng-click="$ctrl.selectItem(item)">{{ item }}</a>
         </li>
     </ul>
     Selected: <b>{{ $ctrl.selected.item }}</b>

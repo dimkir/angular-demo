@@ -5,9 +5,11 @@
 
 
 angular.module('app')
-  .controller('mainCtrl', ['$scope' , 'utils' ,function($scope, utils){
+  .controller('mainCtrl', ['$scope' , 'utils', '$uibModal', '$log', function($scope, utils, $uibModal, $log ){
     
      var vm = this;
+     var $ctrl = this;
+
      var ALL_USERS = users_100.results;
      $scope.name = 'ca'; 
      $scope.users = [];
@@ -37,6 +39,27 @@ angular.module('app')
      $scope.openModal = function(){
 
        console.log('Opening modal....' + new Date());
+
+       var modalInstance = $uibModal.open({
+         templateUrl : 'modals/sample/sampleModal.html',
+         controller  : 'SampleModalCtrl',
+         controllerAs: '$ctrl',
+         size: 'lg',
+        //  appendTo: parentElem // where can I get this parentElem ? This should be simply some div...
+        resolve: {
+            items: function(){ return ['Dimitry', 'is', 'here']  }, // or should this be a function?
+            count: function(){ return $scope.count }
+        }
+
+       });
+
+       modalInstance.result.then(function(selectedItem){
+         console.log('Selected: ');
+         console.log(selectedItem);
+       }, function(cancel){
+         console.log('Dismissed the modal: ' + cancel);
+       });
+
      };
 
 

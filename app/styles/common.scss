@@ -8,7 +8,11 @@ body{
   font-family: 'Slabo 27px', serif;  
 }
 
-.nav, .pagination, .carousel, .panel-title a { cursor: pointer; } 
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+a[ng-click]{
+  cursor: pointer;
+}
 
 
 .clearfix{
