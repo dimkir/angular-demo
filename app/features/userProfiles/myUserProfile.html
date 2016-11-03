@@ -1,9 +1,9 @@
 <div my-closeable class="float-left">
 	<div class="my-user-profile" 
-		 style="background-image: url({{user.picture.large}});">
+		 style="background-image: url({{ robohash(user.login.username) }});">
 
 
-		<a href="{{ user.picture.large }}" target="_blank">
+		<a ng-click="onUserClicked()" xhref="{{ user.picture.large }}" xtarget="_blank">
 			<div class="overlay">
 
 				{{ user.name.first|capitalize }}

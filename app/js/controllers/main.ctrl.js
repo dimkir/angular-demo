@@ -13,6 +13,7 @@ angular.module('app')
      var ALL_USERS = users_100.results;
      $scope.name = 'ca'; 
      $scope.users = [];
+     $scope.team  = [];
 
 
     //  $scope.users = users.results;
@@ -66,6 +67,17 @@ angular.module('app')
      $scope.onAddUser = function(){
        console.log('On add user...');
      };
+
+
+     $scope.onTeamAdd = function(user){
+      //  debugger;
+       if ( !_.includes($scope.team, user)){
+         $scope.team.push(user);
+       }
+       else{
+         console.warn("user is already added");
+       }
+     }
 
 
      vm.filterUsersByName = function(){

@@ -1,0 +1,21 @@
+.selection-panel{
+    overflow-y: hidden;
+    height: 400px;
+    border: 2px solid red;
+    
+    >section{
+        float: left;
+        width: 50%;
+        height: 100%;
+        background-color: aquamarine;
+        overflow-y: auto;
+    }
+
+    >aside{
+        float: right;
+        width: 50%;
+        height: 100%;
+        background-color: mediumpurple;
+        overflow-y: auto;
+    }
+}

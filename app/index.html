@@ -32,14 +32,29 @@
 	<my-sample></my-sample>
 
 
-	<ul class="users">
-		<li>
-			<add-user on-add="onAddUser()"></add-user>
-		</li>
-		<li ng-repeat="user in users">
-			<my-user-profile user="user" />
-		</li>
-	</ul>
+	<div class="clearfix"></div>
+
+    <div class="selection-panel">
+		<section>
+			<ul class="users">
+				<li>
+					<add-user on-add="onAddUser()"></add-user>
+				</li>
+				<li ng-repeat="user in users">
+					<my-user-profile user="user" on-user-clicked="onTeamAdd(user)" />
+				</li>
+			</ul>
+
+		</section>
+		<aside>
+			<ul class="users">
+				<li ng-repeat="user in team">
+					<my-user-profile user="user"/>
+				</li>
+			</ul>
+		</aside>
+
+	</div>
 
 
 	<hr/>
@@ -69,6 +84,7 @@
 	<script src="js/lib/jquery-2.2.4.min.js"></script>
 	<!--<script data-require="bootstrap@3.3.6" data-semver="3.3.6" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
 	<!--<script data-require="angular.js@1.5.8" data-semver="1.5.8" src="https://code.angularjs.org/1.5.8/angular.js"></script>-->
+	<script src="js/lib/lodash.min.js"></script>
 
 
 	<script src="js/lib/shared.js"></script>
