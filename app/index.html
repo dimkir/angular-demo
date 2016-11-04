@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="app">
+<html ng-app="app" ng-controller="AppCtrl">
 
 <head>
 	<!--<link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />-->
@@ -9,7 +9,7 @@
 	<!--<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">-->
 	<link rel="stylesheet" href="css/styles-all.css" />
 
-	<title>Hello =={{ name }}==</title>
+	<title>{{ title }}</title>
 </head>
 
 <body>
@@ -33,6 +33,12 @@
 
 	<script src="js/lib/shared.js"></script>
 	<script src="js/lib/sprintf.min.js"></script>
+
+
+	 <!--this is to make navbar work -->
+	<!--<script src="js/lib/bootstrap-collapse.js"></script>
+	<script src="js/lib/bootstrap-dropdown.js"></script> -->
+	<!-- will this not interfere with boostrap-ui dropdown directive? 	-->
 
 	<!--<script src="lib/angular-1.4.0/angular.js"></script>-->
 	<script src="js/lib/angular-1.5.8/angular.js"></script>

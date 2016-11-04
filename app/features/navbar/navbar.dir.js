@@ -25,6 +25,25 @@
         return directive;
         
         function link(scope, element, attrs) {
+
+            scope.brand = {
+                name: 'ACME Inc'
+            };
+
+            scope.teams = [
+                 { id : 1, name : 'Team 1' },
+                 { id : 2, name : 'Team 2' },
+                 { id : 3, name : 'Team 3' },
+                 { id : 4, name : 'Team 4' },
+            ];
+
+            // scope.isCollapsed = true;
+
+            scope.$on('$routeChangeSuccess', function(){
+                console.info('navbar.dir:   $routeChangeSucess, changing state of isCollapsed to true');
+                scope.isCollapsed = true;
+
+            });
         }
     }
     /* @ngInject */
